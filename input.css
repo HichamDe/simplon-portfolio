@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+    @apply flex justify-center items-center
+}
+
+.code {
+    @apply before:content-[attr(before)] after:content-[attr(after)] before:text-[#ff8f09] after:text-[#ff8f09] before:text-sm before:block before:text-left after:text-sm after:block after:text-right
+}
