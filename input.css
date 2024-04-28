@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.kode-mono-font {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
 .center {
     @apply flex justify-center items-center
 }
 
 .code {
     @apply before:content-[attr(before)] after:content-[attr(after)] before:text-[#ff8f09] after:text-[#ff8f09] before:text-sm before:block before:text-left after:text-sm after:block after:text-right
+    font-bold kode-mono-font md:font-bold 
 }
