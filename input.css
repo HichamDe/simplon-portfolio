@@ -15,6 +15,10 @@
 }
 
 .code {
-    @apply before:content-[attr(before)] after:content-[attr(after)] before:text-[#ff8f09] after:text-[#ff8f09] before:text-sm before:block before:text-left after:text-sm after:block after:text-right
-    font-bold kode-mono-font md:font-bold 
+    @apply before:content-[attr(before)] after:content-[attr(after)] before:text-[#ff8f09] after:text-[#ff8f09] before:text-sm before:block before:text-left after:text-sm after:block after:text-right font-bold kode-mono-font md:font-bold
 }
+
+.project {
+    @apply h-[200px] w-[200px] bg-[#0c0c0c] cursor-pointer hover:shadow-[-10px_10px_0_0_#ff8f09] center rotate-3 hover:rotate-0 hover:scale-105 transition ease-out delay-100
+}
+
