@@ -22,3 +22,65 @@
     @apply h-[200px] w-[200px] bg-[#0c0c0c] cursor-pointer hover:shadow-[-10px_10px_0_0_#ff8f09] center rotate-3 hover:rotate-0 hover:scale-105 transition ease-out delay-100
 }
 
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    /* border-radius: 10rem; */
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f140;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #ff8f09;
+    padding: 2px;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #d87903;
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg);
+    left: 0;
+}
+
+.wave {
+    position: absolute;
+    opacity: .4;
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    border-radius: 43%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.wave.-one {
+    animation: rotate 10000ms infinite linear;
+    opacity: 20%;
+    background: #8c5ef6;
+    border: 5px solid #8c5ef6;
+}
+
+.wave.-two {
+    animation: rotate 6000ms infinite linear;
+    opacity: 10%;
+    background: #8c5ef6;
+    border: 5px solid #8c5ef6;
+}
